@@ -11,7 +11,7 @@ router.get("/", async (req, res, next) => {
 
 router.get("/issue-did", issueDID);
 router.get("/issue-did-to-org", issueDIDToOrg);
-router.get("/issue-vc", issueVC);
-router.get("/validate-vc", validateVC);
+router.post("/issue-vc", issueVC);
+router.post("/validate-vc", validateVC);
 
 module.exports = router;
